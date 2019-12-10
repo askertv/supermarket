@@ -19,27 +19,27 @@ for($i=0; $i<count($res); $i++) {
     $items1.="<a href='uroven1.php?id=".$res[$i]['id']."'>";
     $items1.=$res[$i]['name'];    
     $items1.="</a></td><td width='200'>";
-    $items1.="<a href='action.php?id=".$res[$i]['id']."&op=11'>Редактировать</a>&#160&#160";
-    $items1.="<a href='action.php?id=".$res[$i]['id']."&op=12'>Удалить</a>";
+    $items1.="<a href='action.php?id=".$res[$i]['id']."&op=11'>Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ</a>&#160&#160";
+    $items1.="<a href='action.php?id=".$res[$i]['id']."&op=12'>РЈРґР°Р»РёС‚СЊ</a>";
     $items1.="</td></tr>";
 }
 ?>
 
 <html>
 <head>
-<title>СУПЕРМАРКЕТ</title>
+<title>РЎРЈРџР•Р РњРђР РљР•Рў</title>
 </head>
 <body>
 <BR /><BR /><BR /><BR />
 
 <table border='1' width='600'>
     <tr>
-       <td colspan='2'><b>Продукты</b></td>
+       <td colspan='2'><b>РџСЂРѕРґСѓРєС‚С‹</b></td>
     </tr>
     <?=$items1?>    
 </table>
-<a href='prod.php'>Добавить элемент</a>
+<a href='prod.php'>Р”РѕР±Р°РІРёС‚СЊ СЌР»РµРјРµРЅС‚</a>
 <br>
-<a href='out.php'>Выход из админ-режима</a>
+<a href='out.php'>Р’С‹С…РѕРґ РёР· Р°РґРјРёРЅ-СЂРµР¶РёРјР°</a>
 </body>
 </html>

@@ -43,7 +43,7 @@ if (isset($_POST['submit'])) {
 ?>
 <html>
 <head>
-<title>СУПЕРМАРКЕТ</title>
+<title>РЎРЈРџР•Р РњРђР РљР•Рў</title>
 </head>
 <body>
 <BR /><BR /><BR /><BR />
@@ -54,8 +54,8 @@ if (isset($_GET['id'])&&isset($_GET['op'])) {
         echo "<input type='hidden' name='id' value='".(int)$_GET['id']."'>";
         echo "<input type='hidden' name='op' value='".(int)$_GET['op']."'>";
         echo "<table border='0' width='600'>";
-        echo "<tr><td>Название:</td><td><input type='text' name='name' value=''></td></tr>";
-        echo "<tr><td></td><td><input type='submit' name='submit' value='Сохранить изменения'></td></tr>";
+        echo "<tr><td>РќР°Р·РІР°РЅРёРµ:</td><td><input type='text' name='name' value=''></td></tr>";
+        echo "<tr><td></td><td><input type='submit' name='submit' value='РЎРѕС…СЂР°РЅРёС‚СЊ РёР·РјРµРЅРµРЅРёСЏ'></td></tr>";
         echo "</table></form>";
     }
     if ($_GET['op']=='41') {
@@ -63,13 +63,13 @@ if (isset($_GET['id'])&&isset($_GET['op'])) {
         echo "<input type='hidden' name='id' value='".(int)$_GET['id']."'>";
         echo "<input type='hidden' name='op' value='".(int)$_GET['op']."'>";
         echo "<table border='0' width='600'>";
-        echo "<tr><td>Код:</td><td><input type='text' name='code' value=''></td></tr>";
-        echo "<tr><td>Название:</td><td><input type='text' name='name' value=''></td></tr>";
-        echo "<tr><td></td><td><input type='submit' name='submit' value='Сохранить изменения'></td></tr>";
+        echo "<tr><td>РљРѕРґ:</td><td><input type='text' name='code' value=''></td></tr>";
+        echo "<tr><td>РќР°Р·РІР°РЅРёРµ:</td><td><input type='text' name='name' value=''></td></tr>";
+        echo "<tr><td></td><td><input type='submit' name='submit' value='РЎРѕС…СЂР°РЅРёС‚СЊ РёР·РјРµРЅРµРЅРёСЏ'></td></tr>";
         echo "</table></form>";
     }
 }
 ?>
-<a href='index.php'>Вернуться к началу</a>
+<a href='index.php'>Р’РµСЂРЅСѓС‚СЊСЃСЏ Рє РЅР°С‡Р°Р»Сѓ</a>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset ($_POST['submit'])) {
-    if ($_POST['user'] == 'asker' && $_POST['pass'] == 'dyapshyakhua') {
+    if ($_POST['user'] == 'USER_NAME' && $_POST['pass'] == 'PASSWORD') {
         $_SESSION['username'] = $_POST['user'];
         if (isset ($_GET['url'])) {
             $url = $_GET['url'];
@@ -22,14 +22,14 @@ if (isset ($_POST['submit'])) {
 ?>
 <HTML>
 <HEAD>
-<TITLE>Аутентификация пользователей</TITLE>
+<TITLE>РђСѓС‚РµРЅС‚РёС„РёРєР°С†РёСЏ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№</TITLE>
 </HEAD>
 <BODY>
 <BR />
 <FORM method = 'post'>
 <INPUT type = 'text' name = 'user' /><BR />
 <INPUT type = 'password' name = 'pass' /><BR />
-<INPUT type = 'submit' name = 'submit' value = 'Вход' /><BR />
+<INPUT type = 'submit' name = 'submit' value = 'Р’С…РѕРґ' /><BR />
 </FORM>
 </BODY>
 </HTML>

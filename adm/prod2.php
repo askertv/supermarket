@@ -15,31 +15,31 @@ if (isset($_POST['submit'])) {
     if (mysql_query($query, $link)) {
         header("Location: index.php");
     } else {
-        echo "Ошибка: связь с сервером потеряна, попробуйте позже...";
+        echo "РћС€РёР±РєР°: СЃРІСЏР·СЊ СЃ СЃРµСЂРІРµСЂРѕРј РїРѕС‚РµСЂСЏРЅР°, РїРѕРїСЂРѕР±СѓР№С‚Рµ РїРѕР·Р¶Рµ...";
     }
 }
 ?>
 <html>
 <head>
-<title>СУПЕРМАРКЕТ</title>
+<title>РЎРЈРџР•Р РњРђР РљР•Рў</title>
 </head>
 <body>
 <BR /><BR /><BR /><BR />
-<b>Добавление нового Элемента</b><BR />
+<b>Р”РѕР±Р°РІР»РµРЅРёРµ РЅРѕРІРѕРіРѕ Р­Р»РµРјРµРЅС‚Р°</b><BR />
 <form action='<?=$_SERVER['SCRIPT_NAME']?>' method=POST>
 <input type='hidden' name='ur2' value='<?=$ur?>'>
 <input type='hidden' name='prev' value='<?=$prev_id?>'>
 <table border='0' width='600'>
     <tr>
-       <td>Название:</td>
+       <td>РќР°Р·РІР°РЅРёРµ:</td>
        <td><input type='text' name='name' value=''></td>
     </tr>
     <tr>
        <td></td>
-       <td><input type='submit' name='submit' value='Добавить'></td>
+       <td><input type='submit' name='submit' value='Р”РѕР±Р°РІРёС‚СЊ'></td>
     </tr>
 </table>
 </form>
-<a href='uroven2.php?id=<?=$ur?>&prev=<?=$prev_id?>'>Вернуться</a>
+<a href='uroven2.php?id=<?=$ur?>&prev=<?=$prev_id?>'>Р’РµСЂРЅСѓС‚СЊСЃСЏ</a>
 </body>
 </html>

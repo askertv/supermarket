@@ -21,8 +21,8 @@ if (isset($_GET['id'])) {
         $items2.="<a href='uroven2.php?id=".$data[$i]['ur2_id']."&prev=".$id."'>";
         $items2.=$data[$i]['ur2_name'];    
         $items2.="</a></td><td width='200'>";
-        $items2.="<a href='action.php?id=".$data[$i]['ur2_id']."&op=21'>Редактировать</a>&#160&#160";
-        $items2.="<a href='action.php?id=".$data[$i]['ur2_id']."&op=22'>Удалить</a>";
+        $items2.="<a href='action.php?id=".$data[$i]['ur2_id']."&op=21'>Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ</a>&#160&#160";
+        $items2.="<a href='action.php?id=".$data[$i]['ur2_id']."&op=22'>РЈРґР°Р»РёС‚СЊ</a>";
         $items2.="</td></tr>";
     }
 }
@@ -30,7 +30,7 @@ if (isset($_GET['id'])) {
 
 <html>
 <head>
-<title>СУПЕРМАРКЕТ > ПРОДУКТЫ</title>
+<title>РЎРЈРџР•Р РњРђР РљР•Рў > РџР РћР”РЈРљРўР«</title>
 </head>
 <body>
 <BR /><BR /><BR /><BR />
@@ -41,8 +41,8 @@ if (isset($_GET['id'])) {
     </tr>
     <?=$items2?>
 </table>
-<a href='prod1.php?ur=<?=$id?>'>Добавить элемент</a>
+<a href='prod1.php?ur=<?=$id?>'>Р”РѕР±Р°РІРёС‚СЊ СЌР»РµРјРµРЅС‚</a>
 <br /><br />
-<a href='index.php'>Вернуться к началу</a>
+<a href='index.php'>Р’РµСЂРЅСѓС‚СЊСЃСЏ Рє РЅР°С‡Р°Р»Сѓ</a>
 </body>
 </html>

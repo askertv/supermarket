@@ -23,8 +23,8 @@ if (isset($_GET['id'])) {
         $items.="<a href='uroven3.php?id=".$data[$i]['pos_id']."'>";
         $items.=$data[$i]['pos_name'];    
         $items.="</a></td><td width='200'>";
-        $items.="<a href='action.php?id=".$data[$i]['pos_id']."&op=41'>Редактировать</a>&#160&#160";
-        $items.="<a href='action.php?id=".$data[$i]['pos_id']."&op=42'>Удалить</a>";
+        $items.="<a href='action.php?id=".$data[$i]['pos_id']."&op=41'>Р РµРґР°РєС‚РёСЂРѕРІР°С‚СЊ</a>&#160&#160";
+        $items.="<a href='action.php?id=".$data[$i]['pos_id']."&op=42'>РЈРґР°Р»РёС‚СЊ</a>";
         $items.="</td></tr>";
     }
 }
@@ -33,7 +33,7 @@ if (isset($_GET['id'])) {
 
 <html>
 <head>
-<title>СУПЕРМАРКЕТ > ПРОДУКТЫ > <?=$data[0]['urv3_name']?></title>
+<title>РЎРЈРџР•Р РњРђР РљР•Рў > РџР РћР”РЈРљРўР« > <?=$data[0]['urv3_name']?></title>
 </head>
 <body>
 <BR /><BR /><BR /><BR />
@@ -44,10 +44,10 @@ if (isset($_GET['id'])) {
     </tr>
     <?=$items?>
 </table>
-<a href='prod3.php?ur=<?=$id?>&prev=<?=$prev_id?>&pprev=<?=$pprev_id?>'>Добавить элемент</a>
+<a href='prod3.php?ur=<?=$id?>&prev=<?=$prev_id?>&pprev=<?=$pprev_id?>'>Р”РѕР±Р°РІРёС‚СЊ СЌР»РµРјРµРЅС‚</a>
 <br /><br />
-<a href='uroven2.php?id=<?=$prev_id?>&prev=<?=$pprev_id?>'>Вернуться назад</a>
+<a href='uroven2.php?id=<?=$prev_id?>&prev=<?=$pprev_id?>'>Р’РµСЂРЅСѓС‚СЊСЃСЏ РЅР°Р·Р°Рґ</a>
 <br /><br />
-<a href='index.php'>Вернуться к началу</a>
+<a href='index.php'>Р’РµСЂРЅСѓС‚СЊСЃСЏ Рє РЅР°С‡Р°Р»Сѓ</a>
 </body>
 </html>

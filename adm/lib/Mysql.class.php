@@ -14,7 +14,7 @@ public function __construct($db) {
         self::$con=mysql_connect($this->db_host, $this->db_user, $this->db_pass);
         ++self::$con_count;
     }
-    mysql_select_db($db, self::$con) OR die('Ошибка подключения к базе данных');
+    mysql_select_db($db, self::$con) OR die('РћС€РёР±РєР° РїРѕРґРєР»СЋС‡РµРЅРёСЏ Рє Р±Р°Р·Рµ РґР°РЅРЅС‹С…');
 }
 public function prepare($var) {
     return mysql_real_escape_string($var);

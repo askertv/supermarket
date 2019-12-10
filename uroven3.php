@@ -25,7 +25,7 @@ if (isset($_GET['id'])) {
 
 <html>
 <head>
-<title>СУПЕРМАРКЕТ > ПРОДУКТЫ > <?=$data[0]['urv3_name']?></title>
+<title>РЎРЈРџР•Р РњРђР РљР•Рў > РџР РћР”РЈРљРўР« > <?=$data[0]['urv3_name']?></title>
 </head>
 <body>
 <BR /><BR /><BR /><BR />
@@ -38,8 +38,8 @@ if (isset($_GET['id'])) {
        <td><?=$items?></td>
     </tr>
 </table>
-<a href='uroven2.php?id=<?=$prev_id?>&prev=<?=$pprev_id?>'>Вернуться назад</a>
+<a href='uroven2.php?id=<?=$prev_id?>&prev=<?=$pprev_id?>'>Р’РµСЂРЅСѓС‚СЊСЃСЏ РЅР°Р·Р°Рґ</a>
 <br /><br />
-<a href='index.php'>Вернуться к началу</a>
+<a href='index.php'>Р’РµСЂРЅСѓС‚СЊСЃСЏ Рє РЅР°С‡Р°Р»Сѓ</a>
 </body>
 </html>

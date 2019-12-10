@@ -19,14 +19,14 @@ for($i=0; $i<count($res); $i++) {
 
 <html>
 <head>
-<title>ัำฯละฬภะสลา</title>
+<title>ะกะฃะะ•ะ ะะะ ะะ•ะข</title>
 </head>
 <body>
 <BR /><BR /><BR /><BR />
 
 <table border='1' width='600'>
     <tr>
-       <td><b>ฯ๐๎ไ๓๊๒๛</b></td>
+       <td><b>ะั€ะพะดัะบัั</b></td>
     </tr>
     <tr>
        <td><?=$items1?></td>

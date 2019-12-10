@@ -22,7 +22,7 @@ if (isset($_GET['id'])) {
 
 <html>
 <head>
-<title>СУПЕРМАРКЕТ > ПРОДУКТЫ</title>
+<title>РЎРЈРџР•Р РњРђР РљР•Рў > РџР РћР”РЈРљРўР«</title>
 </head>
 <body>
 <BR /><BR /><BR /><BR />
@@ -35,6 +35,6 @@ if (isset($_GET['id'])) {
        <td><?=$items2?></td>
     </tr>
 </table>
-<a href='index.php'>Вернуться к началу</a>
+<a href='index.php'>Р’РµСЂРЅСѓС‚СЊСЃСЏ Рє РЅР°С‡Р°Р»Сѓ</a>
 </body>
 </html>
