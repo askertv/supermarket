@@ -5,7 +5,7 @@ CREATE TABLE `bays` (
   `position` int(11) NOT NULL,
   `count` float(6,3) NOT NULL,
   `check` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=UTF-8 COMMENT='bays';
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8 COMMENT='bays';
 
 CREATE TABLE `checks` (
   `id` int(11) NOT NULL default '0',
@@ -15,19 +15,19 @@ CREATE TABLE `checks` (
   `kassir` int(11) NOT NULL,
   `summa` float(6,2) NOT NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=UTF-8 COMMENT='checks';
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8 COMMENT='checks';
 
 CREATE TABLE `kasses` (
   `id` int(11) NOT NULL auto_increment,
   `number` char(4) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=UTF-8 COMMENT='Number of kasses' ;
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8 COMMENT='Number of kasses' ;
 
 CREATE TABLE `kassirs` (
   `id` int(11) NOT NULL auto_increment,
   `name` char(40) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=UTF-8 COMMENT='Kassirs' ;
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8 COMMENT='Kassirs' ;
 
 CREATE TABLE `positions` (
   `id` int(11) NOT NULL auto_increment,
@@ -36,37 +36,37 @@ CREATE TABLE `positions` (
   `name` char(40) default NULL,
   PRIMARY KEY  (`id`),
   KEY `code` (`code`)
-) ENGINE=InnoDB DEFAULT CHARSET=UTF-8 COMMENT='Position names' ;
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8 COMMENT='Position names' ;
 
 CREATE TABLE `prices` (
   `id` int(11) NOT NULL auto_increment,
   `code_id` int(11) default NULL,
   `price` float(6,2) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=UTF-8 COMMENT='Position prices' ;
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8 COMMENT='Position prices' ;
 
 CREATE TABLE `shops` (
   `id` int(11) NOT NULL auto_increment,
   `name` char(40) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=UTF-8 COMMENT='Shops names' ;
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8 COMMENT='Shops names' ;
 
 CREATE TABLE `uroven1` (
   `id` int(11) NOT NULL auto_increment,
   `name` char(40) NOT NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=UTF-8 ;
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8 ;
 
 CREATE TABLE `uroven2` (
   `id` int(11) NOT NULL auto_increment,
   `ur1_id` int(11) NOT NULL,
   `name` char(40) NOT NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=UTF-8 ;
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8 ;
 
 CREATE TABLE `uroven3` (
   `id` int(11) NOT NULL auto_increment,
   `ur2_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=UTF-8;
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8;
